@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+h1 {
+    margin: 20px;
+    color: #333;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+ul {
+    justify-content: center;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    margin-bottom: auto;
+    
+
+}
+
+.nav-link.active {
+    text-decoration-color:  black; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto en el enlace activo */
+}
+
+#graficos {
+    
+    padding: 10px;
+    justify-content: center;  
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.288);
+    
+}
+
+.chart-container{
+    
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+    
+}
+.chart-container {
+    display: block;
+    width: 900px; 
+    height: 570px;         
+    margin-top: 3px;
+}
+#todos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    #todos .chart-container {
+        width: calc(33.333% - 10px); 
+        height: 300px; 
+    }
+}
+@media (min-width: 768px) {
+    #todos .chart-container  {
+        width: calc(25% - 10px); 
+        height: 300px; 
+        
+    }
+}
+
+
